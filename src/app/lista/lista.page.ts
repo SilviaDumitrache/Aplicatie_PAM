@@ -18,4 +18,7 @@ export class ListaPage implements OnInit {
   ngOnInit() {
   }
 
-}
+ 
+  }
+
+
