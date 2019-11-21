@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'lista',
     loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
   },
+  {
+    path: 'farmacii',
+    loadChildren: () => import('./farmacii/farmacii.module').then( m => m.FarmaciiPageModule)
+  },
 ];
 
 @NgModule({

@@ -15,6 +15,11 @@ export class HomePage {
   btnClicked(){
     console.log('button was clicked')
     this.router.navigate(['lista'])
+    
   }
 
+  btnClicked1(){
+    console.log('button was clicked')
+    this.router.navigate(['farmacii'])
+  }
 }
