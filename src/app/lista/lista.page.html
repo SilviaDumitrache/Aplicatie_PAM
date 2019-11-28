@@ -11,7 +11,19 @@
 </ion-header>
 
 <ion-content>
-  Lista cu medicamente 
+
+    <ion-list>
+        <ng-container *ngFor="let med of meds">
+          <ion-item>
+            <div class="d-flex justify-content-between" style="width: 100%;">
+              <div>{{med.name}}</div>
+              <div>{{med.farmacie}}</div>
+              <ion-button size="small">Detalii</ion-button>
+            </div>
+              </ion-item>
+              </ng-container>
+              </ion-list>
+
     <ion-button (click)=goBack() fill="outline" color="secondary"> 
       Back  
       </ion-button>
