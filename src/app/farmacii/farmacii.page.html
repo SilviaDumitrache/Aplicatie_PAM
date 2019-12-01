@@ -1,11 +1,10 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-title>Lista farmaciilor partenere:</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
 
   <ion-list>
     <ng-container *ngFor="let farm of farms">
@@ -14,13 +13,13 @@
           <div>{{farm.name}}</div>
           <div>{{farm.street}}</div>
           <div>{{farm.nr}}</div>
-          <ion-button size="small">Detalii</ion-button>
+          <ion-button size="small" color="success">Detalii</ion-button>
         </div>
           </ion-item>
           </ng-container>
           </ion-list>
           
-  <ion-button (click)=goBack() fill="outline" color="secondary"> 
+  <ion-button (click)=goBack() fill="outline" color="success"> 
     Back  
     </ion-button>
 

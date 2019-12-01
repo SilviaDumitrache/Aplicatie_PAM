@@ -1,5 +1,5 @@
 <ion-header no-border>
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-title>Medicamente disponibile: </ion-title>
   </ion-toolbar>
 
@@ -18,13 +18,13 @@
             <div class="d-flex justify-content-between" style="width: 100%;">
               <div>{{med.name}}</div>
               <div>{{med.farmacie}}</div>
-              <ion-button size="small">Detalii</ion-button>
+              <ion-button size="small" color="success">Detalii</ion-button>
             </div>
               </ion-item>
               </ng-container>
               </ion-list>
 
-    <ion-button (click)=goBack() fill="outline" color="secondary"> 
+    <ion-button (click)=goBack() fill="outline" color="success"> 
       Back  
       </ion-button>
 </ion-content>
