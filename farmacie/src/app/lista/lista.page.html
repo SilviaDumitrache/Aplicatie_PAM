@@ -1,6 +1,8 @@
 <ion-header no-border>
   <ion-toolbar color="success">
-    <ion-title>Medicamente disponibile: </ion-title>
+    <ion-title top center edge id = "titl">
+      Medicamente disponibile: 
+    </ion-title>
   </ion-toolbar>
 
   <ion-searchbar (ionChange)="Cauta($event)" >
@@ -12,19 +14,18 @@
 
 <ion-content>
 
-    <ion-list>
+    <ion-list class="bg-transparent">
         <ng-container *ngFor="let med of meds">
-          <ion-item>
+          <ion-item text-center color="none" lines="none">
             <div class="d-flex justify-content-between" style="width: 100%;">
-              <div>{{med.name}}</div>
-              <div>{{med.farmacie}}</div>
-              <ion-button size="small" color="success">Detalii</ion-button>
+              <div id = "name">{{med.name}}</div>
+              <div id = "farm">{{med.farmacie}}</div>
             </div>
               </ion-item>
               </ng-container>
               </ion-list>
 
-    <ion-button (click)=goBack() fill="outline" color="success"> 
+    <ion-button (click)=goBack() color="success" id = "buton_back"> 
       Back  
       </ion-button>
 </ion-content>
