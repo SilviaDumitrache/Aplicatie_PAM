@@ -9,4 +9,8 @@ export class ApiService {
   getAllFarms() {
     return this.http.get(`${environment.apiUrl}/farm`);
   }
+
+  getAllMeds() {
+    return this.http.get(`${environment.apiUrl}/med`);
+  }
 }
