@@ -1,21 +1,30 @@
 <ion-header>
   <ion-toolbar color="success">
-    <ion-title >
+    <ion-title top center edge id = "title">
       Find your cure ! 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-button (click)="btnClicked()" fill="outline" color="success"> 
+    <!-- <h1>
+      Bun venit!
+      Aceasta este o aplicatie care va ajuta sa verificati disponibilitatea unui medicament in farmaciile partenere.
+      Pentru a incepe cautarea, apasati butonul urmator: 
+      </h1> -->
+
+    <ion-button (click)="btnClicked()"  id= "button_cauta" > 
+        <!-- fill="outline" color="success" -->
       Cauta ! 
     </ion-button> 
 
-    <h1>
+    <!-- <h1>
+      Pentru a vedea lista farmaciilor partenere, dar si detalii despre acestea, faceti click pe butonul urmator: 
+      </h1> -->
 
-    </h1>
-
-    <ion-button (click)="btnClicked1()" fill="outline" color="success"> 
-      Vezi lista farmaciilor 
+    <ion-button (click)="btnClicked1()" id = "button_farm" >
+        <!-- color="success" -->
+        <!-- fill="outline" daca vreau ca butonul sa fie "transparent"  -->
+      Farmacii partenere
     </ion-button> 
 </ion-content>
