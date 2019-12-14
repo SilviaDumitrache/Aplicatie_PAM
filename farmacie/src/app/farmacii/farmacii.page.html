@@ -1,25 +1,27 @@
-<ion-header>
+<ion-header no-border>
   <ion-toolbar color="success">
-    <ion-title>Lista farmaciilor partenere:</ion-title>
+    <ion-title top center edge id = "tit">
+      Lista farmaciilor partenere:
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-list>
+  <ion-list class="bg-transparent">
     <ng-container *ngFor="let farm of farms">
-      <ion-item>
+      <ion-item text-center color="none" lines="none">
         <div class="d-flex justify-content-between" style="width: 100%;">
-          <div>{{farm.name}}</div>
-          <div>{{farm.street}}</div>
-          <div>{{farm.nr}}</div>
-          <ion-button size="small" color="success">Detalii</ion-button>
+          <div id = "name">{{farm.name}}</div>
+          <div id = "street">{{farm.street}}</div>
+          <div id = "nr">{{farm.nr}}</div>
+          <ion-button size="small" >Detalii</ion-button>
         </div>
           </ion-item>
           </ng-container>
           </ion-list>
           
-  <ion-button (click)=goBack() fill="outline" color="success"> 
+  <ion-button (click)=goBack() id = "buton_back"> 
     Back  
     </ion-button>
 
